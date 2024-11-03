@@ -1,81 +1,90 @@
-# Rent Or Buy Property Console-Line Application
-This repository showcases a beginner C# console applications for renting or buying a property.
-
-## Context
-The Rent or Buy Property is a C# command-line application that aims to assist family members determine if the amount of money they are paying is sufficient to purchase a house.
-
-## Table of Contents
-- [Rent or Buy Property](#rent-or-buy-property-console-line-application)
-- [Context](#context)
-- [Table of Contents](#table-of-contents)
-- [Overview](#overview)
-- [Demonstrating functionality](#demonstrating-functionality)
-- [Handle Invalid Input](#handle-invalid-input)
+# Rent or Buy Property: A Console Application
+This repository showcases a beginner-friendly C# console application designed to assist users in deciding whether renting or buying a property is more affordable.
 
 ## Overview
-Rent or Buy Property Application 
+This C# command-line application helps users determine if their current expenses are sufficient to rent or buy a property. By inputting their gross monthly income, tax deductions, and other monthly expenses, users can calculate their housing affordability. The application calculates the monthly loan repayment for buying a property and alerts users if the repayment is more than a third of their gross monthly income, indicating a lower likelihood of loan approval. Additionally, it provides an overview of available funds after deductions.
 
-You requested assistance in using an application to help a family member determine if the amount of money they are paying is sufficient to purchase a house. The family member will use the application to input their gross monthly income (before deductions), estimated monthly tax deducted, and estimated monthly expenditures in various categories. Then they can choose between renting accommodation or buying a property. If they choose to rent, they can input the monthly rental amount. If they choose to buy a property, they must enter the purchase price, total deposit, interest rate, and number of months to repay. The Application will calculate the monthly home 
-loan repayment for buying a property and alert the user if the repayment amount is more than a third of their gross monthly income, indicating that approval of the home loan is unlikely. The Application will also calculate the available monthly money after all specified deductions.
-- The coding standards should be internationally acceptable, and the code should include comprehensive 
-comments explaining variable names, methods, and the logic of programming code.  
-- Submit source code and a readme file with instructions for compiling and running the software:
+The code follows internationally accepted coding standards, with comprehensive comments explaining variables, methods, and programming logic.
 
-### Demonstrating functionality
+## Table of Contents
+- [Rent or Buy Property](#rent-or-buy-property-a-console-application)
+- [Overview](#overview)
+- [Table of Contents](#table-of-contents)
+- [Features](#features)
+- [Demonstrating functionality](#demonstrating-functionality)
+- [Error Handling](#error-handling)
 
-Prompt user for gross monthly income:
+
+## Features
+- Income and Expense Calculation: Users can input their gross monthly income, tax deductions, and other monthly expenses for a customized affordability assessment.
+- Rent or Buy Options: Users can select to either rent or buy a property. For renting, they enter the monthly rental amount; for buying, they enter the purchase price, deposit, interest rate, and loan term.
+- Affordability Alerts: The application notifies users if their calculated loan repayment exceeds one-third of their income, indicating potential challenges with loan approval.
+- Input Validation: The application checks for valid inputs, including numbers only for income and expense fields, and prompts users to re-enter data as needed.
+
+
+## Demonstrating functionality
+Here’s a step-by-step demonstration of the application's functionality:
+
+1. Gross Monthly Income Input:
+* The user is prompted to enter their gross monthly income:
 <br> <img src="assets/images/RoB1.png" alt="Rent or Buy Property image 1">
 
-Prompt user for estimated monthly tax deduction:
+2. Estimated Monthly Tax Deduction Input:
+* The user is prompted to enter their estimated monthly tax deduction:
 <br> <img src="assets/images/RoB2.png" alt="Rent or Buy Property image 2">
 
-Prompt user for estimated monthly living expenses:
-<br> a.
+3. Monthly Living Expenses Input:
+* Users provide an estimate of their total monthly living expenses:
+<br> a. Living expenses:
 <br> <img src="assets/images/RoB3a.png" alt="Rent or Buy Property image 3a">
-
-<br> b.
+<br> b. Additional expenses:
 <br> <img src="assets/images/RoB3b.png" alt="Rent or Buy Property image 3b">
 
-Prompt user to choose between renting or buying:
+4. Rent or Buy Selection:
+* The user selects either the renting or buying option:
 <br> <img src="assets/images/RoB4.png" alt="Rent or Buy Property image 4">
 
-Prompt user for monthly rental amount (if renting):
+5. Renting Option:
+* If renting is selected, the user inputs the monthly rental amount:
 <br> <img src="assets/images/RoB5.png" alt="Rent or Buy Property image 5">
 
-Prompt user for purchase price (if buying):
+6. Buying Option:
+* If buying is selected, the user provides the property’s purchase price: 
 <br> <img src="assets/images/RoB6.png" alt="Rent or Buy Property image 6">
 
-Prompt user for total deposit amount (if buying):
+* Deposit amount:
 <br> <img src="assets/images/RoB7.png" alt="Rent or Buy Property image 7">
 
-Prompt user for interest rate (if buying): 
+* Interest rate:
 <br> <img src="assets/images/RoB8.png" alt="Rent or Buy Property image 8">
 
-Prompt user for number of months for repayment (if buying):
+* And loan term in months:
 <br> <img src="assets/images/RoB9.png" alt="Rent or Buy Property image 9">
 
-Calculate available monthly funds (if renting):
+7. Affordability Calculation and Results:
+* For both renting and buying options, the application calculates the available monthly funds after expenses and, if applicable, the monthly home loan repayment:
+<br> Calculate available monthly funds (if renting):
 <br> <img src="assets/images/RoB10.png" alt="Rent or Buy Property image 10">
-
-Calculate monthly home loan repayment amount (if buying):
+<br> Calculate available monthly funds (if buying):
+<br> <img src="assets/images/RoB13.png" alt="Rent or Buy Property image 13">
+<br> Calculate monthly home loan repayment amount (if applicable):
 <br> <img src="assets/images/RoB11.png" alt="Rent or Buy Property image 11">
 
-Display alert if home loan repayment > 1/3 of income:
+* It then displays an alert if the repayment amount exceeds one-third of the user's income:
 <br> <img src="assets/images/RoB12.png" alt="Rent or Buy Property image 12">
 
-Calculate available monthly funds (if buying):
-<br> <img src="assets/images/RoB13.png" alt="Rent or Buy Property image 13">
 
+## Error Handling: 
+The application incorporates robust error handling to ensure valid input from the user. Below are a few examples:
 
-#### Handle invalid input: 
-If the user does not enter any value, they will be prompted again to enter their name and if they enter their name with a small letter, it would be capitalized automatically:
+1. Name Input Validation:
+* If the user fails to enter a name, they’ll be prompted to re-enter it. If they enter their name in lowercase, it’s automatically capitalized:
 <br> <img src="assets/images/RoB14.png" alt="Rent or Buy Property image 14">
 
-For ALL input, if the user enters a negative number or some text, the user will be prompted again until they enter valid input:
+2. Negative and Textual Inputs:
+* If the user enters negative numbers or text in fields expecting numerical input, they are prompted to re-enter valid data:
 <br> <img src="assets/images/RoB15.png" alt="Rent or Buy Property image 15">
 
-When prompted for Renting or Buying, if the user enters a number that is not either 1 or 2, or a negative number, or some text, they will be prompted again until they enter valid input:
+3. Rent or Buy Selection Validation:
+* For the rent/buy selection, if the user enters a number other than 1 or 2, a negative number, or text, they are prompted to re-enter a valid selection:
 <br> <img src="assets/images/RoB16.png" alt="Rent or Buy Property image 16">
-
-Again, if the user enters a negative number or some text, they will be prompted again until they enter valid input:
-<br> <img src="assets/images/RoB17.png" alt="Rent or Buy Property image 17">
