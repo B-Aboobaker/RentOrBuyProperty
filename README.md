@@ -8,6 +8,9 @@ The Rent or Buy Property is a C# command-line application that aims to assist fa
 - [Rent or Buy Property](#rent-or-buy-property-console-line-application)
 - [Context](#context)
 - [Table of Contents](#table-of-contents)
+- [Overview](#overview)
+- [Demonstrating functionality](#demonstrating-functionality)
+- [Handle Invalid Input](#handle-invalid-input)
 
 ## Overview
 Rent or Buy Property Application 
