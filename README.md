@@ -1,10 +1,12 @@
 # Rent or Buy Property: A Console Application
 This repository showcases a beginner-friendly C# console application designed to assist users in deciding whether renting or buying a property is more affordable.
 
+
 ## Overview
 This C# command-line application helps users determine if their current expenses are sufficient to rent or buy a property. By inputting their gross monthly income, tax deductions, and other monthly expenses, users can calculate their housing affordability. The application calculates the monthly loan repayment for buying a property and alerts users if the repayment is more than a third of their gross monthly income, indicating a lower likelihood of loan approval. Additionally, it provides an overview of available funds after deductions.
 
 The code follows internationally accepted coding standards, with comprehensive comments explaining variables, methods, and programming logic.
+
 
 ## Table of Contents
 - [Rent or Buy Property](#rent-or-buy-property-a-console-application)
@@ -13,6 +15,7 @@ The code follows internationally accepted coding standards, with comprehensive c
 - [Features](#features)
 - [Demonstrating functionality](#demonstrating-functionality)
 - [Error Handling](#error-handling)
+- [Code Walkthrough](#code-walkthrough)
 
 
 ## Features
@@ -88,3 +91,11 @@ The application incorporates robust error handling to ensure valid input from th
 3. Rent or Buy Selection Validation:
 * For the rent/buy selection, if the user enters a number other than 1 or 2, a negative number, or text, they are prompted to re-enter a valid selection:
 <br> <img src="assets/images/RoB16.png" alt="Rent or Buy Property image 16">
+
+
+## Code Walkthrough
+This section explains the main functions and logic implemented in the application:
+
+- Income and Expense Handling: Handles user input for income and expenses, ensuring they are numeric and positive.
+- Loan Calculation: Calculates monthly repayments based on user inputs for property price, deposit, interest rate, and term.
+- Affordability Check: Compares repayment amount to one-third of gross monthly income, displaying an alert if the threshold is exceeded.
